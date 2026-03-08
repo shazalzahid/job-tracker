@@ -66,9 +66,7 @@ Data is stored in `server/jobs.db` (SQLite). Each user only sees and edits their
 
 ## Deploy
 
-- See [DEPLOY.md](./DEPLOY.md) for Render (one app) and other deploy options.
-
-Set `JWT_SECRET` in production (e.g. `openssl rand -hex 32`).
+The app is deployed on Render. Set `JWT_SECRET` in production (e.g. `openssl rand -hex 32`).
 
 ## License
 
