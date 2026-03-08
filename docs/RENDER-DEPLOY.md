@@ -87,8 +87,9 @@ These tell Render how to build the React app and run the server.
 
 **Build Command:**
 ```bash
-cd client && npm install && npm run build && cd ../server && npm install
+cd client && npm install --include=dev && npm run build && cd ../server && npm install
 ```
+(`--include=dev` ensures Vite and other devDependencies are installed so the client build works on Render.)
 
 What it does: installs frontend deps, builds the Vite app into `client/dist`, then installs server deps.
 
@@ -177,7 +178,7 @@ Wait until the status is **Live** (green). The first time you open the URL, the 
 | What | Value |
 |------|--------|
 | **Root Directory** | Blank (if repo root = folder with `client` + `server`) or path to that folder |
-| **Build Command** | `cd client && npm install && npm run build && cd ../server && npm install` |
+| **Build Command** | `cd client && npm install --include=dev && npm run build && cd ../server && npm install` |
 | **Start Command** | `cd server && NODE_ENV=production node index.js` |
 | **Env vars** | `NODE_ENV=production`, `JWT_SECRET=<your-secret>` |
 | **App URL** | `https://<your-service-name>.onrender.com` |
