@@ -4,12 +4,6 @@ You can deploy in two ways: **one service** (backend + frontend together) or **t
 
 ---
 
-## Render – detailed guide
-
-**Using Render?** See **[docs/RENDER-DEPLOY.md](docs/RENDER-DEPLOY.md)** for a full step-by-step (repo setup, every field, env vars, troubleshooting).
-
----
-
 ## Option 1: One service on Render (simplest)
 
 One URL for the whole app. Render runs Node, builds the React app in the build step, then serves it from Express.

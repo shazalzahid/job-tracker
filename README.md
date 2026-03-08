@@ -2,6 +2,8 @@
 
 Full-stack app to track job applications: company, role, status, notes, and links. Built with **Express + SQLite** (REST API) and **React** (Vite).
 
+**Live demo:** [https://job-tracker-791z.onrender.com](https://job-tracker-791z.onrender.com)
+
 ## Tech stack
 
 - **Backend:** Node.js, Express, SQLite (better-sqlite3), JWT auth (jsonwebtoken), bcryptjs, CORS
@@ -64,8 +66,7 @@ Data is stored in `server/jobs.db` (SQLite). Each user only sees and edits their
 
 ## Deploy
 
-- **Render (one app):** **[docs/RENDER-DEPLOY.md](docs/RENDER-DEPLOY.md)** – full step-by-step, build/start commands, env vars, troubleshooting.
-- **Other options:** [DEPLOY.md](./DEPLOY.md) – Render one-service summary + Option 2 (frontend + backend separate).
+- See [DEPLOY.md](./DEPLOY.md) for Render (one app) and other deploy options.
 
 Set `JWT_SECRET` in production (e.g. `openssl rand -hex 32`).
 
